@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ef94ce9da8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <ul class="sideBar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Goals</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">PaulMwangi</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">My Goals</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Contacts</a></li>
+            
+            <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sideMenu = document.querySelector(".sideBar");
+            sideMenu.style.display= 'flex'
+        }
+        function hideSidebar(){
+            const sideMenu = document.querySelector(".sideBar");
+            sideMenu.style.display= 'none'
+        }
+    </script>
+    <section class="profile">
+        <div class="hero">
+            <div class="container">
+                <img src="./assets/Mwapaul.jpeg" alt="">
+                <h1>Paul Mwangi</h1>
+                <h2>Frontend Developer</h2>
+            </div>
+            <div class="socials">
+                <div class="slack">
+                   <i class="fa-brands fa-slack"></i> 
+                   <h2 data-testid="@Mwapaul">@Mwapaul</h2>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/Paulmwas"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/PaulMwa50591683"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <section class="my-goals">
+        <div class="container1">
+            <div class="goal">
+                <h1>MASTER FRONTEND DEVELOPMENT</h1>
+                <p>I aim to become proficient in HTML, CSS, JavaScript, and React, creating dynamic and responsive web applications. I'll contribute to open-source projects to sharpen my skills.</p>
+            </div>
+            <div class="goal">
+                <h1>EXPAND MY BACKEND KNOWLEDGE</h1>
+                <p> I plan to learn server-side technologies like Node.js, Express, and databases. This will allow me to work as a full-stack developer, capable of handling both front-end and back-end tasks.</p>
+            </div>
+            <div class="goal">
+                <h1>IMPROVE PROBLEM-SOLVING SKILLS</h1>
+                <p>: I plan to regularly practice coding challenges on platforms like LeetCode or HackerRank to enhance my problem-solving abilities, which are essential for technical interviews and development work.</p>
+            </div>
+            <div class="goal">
+                <h1>BECOME HIRABLE</h1>
+                <p> I aim to build strong technical skills and develop personal projects, enhancing my problem-solving and collaboration abilities to become a competitive candidate ready to be hired.</p>
+            </div>
+            <div class="goal">
+                <h1>IMPROVE COLLABORATION SKILLS </h1>
+                <p>I aim to improve my collaboration skills in teamwork and commmunication. This will be by team project and participating in code reviews. I know this is an essential skill needed in this proffesion.</p>
+            </div>
+            <div class="goal">
+                <h1>MENTOR MY JUNIORS</h1>
+                <p> I aim to mentor and share my knowledge with junior developers, fostering a collaborative learning environment and reinforcing my own understanding in the process</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
