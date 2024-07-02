@@ -8,9 +8,12 @@ body{
     background-color: #aae472;
 }
 nav{
-   background-color: #c0e9ad;
+   background-color: transparent;
    box-shadow: 3px 3px 3px rgba(0,0,0,0.1); 
    color: #152a09;
+   position: sticky;
+   top: 0;
+   z-index: 999;
 }
 nav ul{
     width: 100%;
@@ -18,6 +21,7 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
 }
 nav li{
     height: 60px;
